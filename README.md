@@ -1,6 +1,5 @@
 # Almdrasa-Notes
 ![Poster](./assest/poster.jpeg)
-![Poster](./assest/poster1.jpeg)
 ![Poster](./assest/poster2.jpeg)
 ![Poster](./assest/poster3.jpeg)
 
