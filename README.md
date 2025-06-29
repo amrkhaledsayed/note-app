@@ -14,6 +14,10 @@ Almdrasa-Notes is a simple and intuitive note-taking application designed to hel
 
 ---
 
+## Demo
+
+Experience Almdrasa-Notes live: [https://almadrasa-note1.netlify.app/](https://almadrasa-note1.netlify.app/)
+
 ## Features
 
 * **Create Notes:** Easily add new notes with a title, author, and content.
@@ -56,7 +60,7 @@ You only need a modern web browser to run this application.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/Almdrasa-Notes.git](https://github.com/YOUR_USERNAME/Almdrasa-Notes.git)
+    git clone [https://github.com/amrkhaledsayed/note-app.git](https://github.com/amrkhaledsayed/note-app.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
