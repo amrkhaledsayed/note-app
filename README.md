@@ -1,7 +1,11 @@
 # Almdrasa-Notes
-![Poster](./assest/poster.jpeg)
-![Poster](./assest/poster2.jpeg)
-![Poster](./assest/poster3.jpeg)
+<table>
+  <tr>
+    <td><img src="./assest/poster.jpeg" width="200"/></td>
+    <td><img src="./assest/poster2.jpeg" width="200"/></td>
+    <td><img src="./assest/poster3.jpeg" width="200"/></td>
+  </tr>
+</table>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
