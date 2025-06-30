@@ -45,28 +45,46 @@ Almdrasa-Notes is a simple and intuitive note-taking application designed to hel
 
 ---
 
-## Getting Started
+# Getting Started
 
-To get a local copy up and running, follow these simple steps.
+To get a local copy of this application up and running, follow these simple steps.
 
-### Prerequisites
+---
 
-You only need a modern web browser to run this application.
+## Prerequisites
 
-### Installation
+* Node.js (which includes npm)
+* A modern web browser
+
+---
+
+## Installation
 
 1.  **Clone the repository:**
+
     ```bash
     git clone [https://github.com/YOUR_USERNAME/Almdrasa-Notes.git](https://github.com/YOUR_USERNAME/Almdrasa-Notes.git)
     ```
+
 2.  **Navigate to the project directory:**
+
     ```bash
     cd Almdrasa-Notes
     ```
-3.  **Open `index.html`:**
-    Simply open the `index.html` file in your preferred web browser.
 
----
+3.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    This command will typically open your application in your default web browser (often at http://localhost:5173 or another available port). If it doesn't open automatically, you can copy the URL displayed in your terminal and paste it into your browser.
 
 ## Usage
 
