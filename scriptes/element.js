@@ -41,3 +41,4 @@ export const errorTittle =
 export const errorAuthor =
   authorNote.parentElement.querySelector(".error-message");
 export const errorNote = Note.parentElement.querySelector(".error-message");
+export const containerSearch = document.querySelector(".container_search");

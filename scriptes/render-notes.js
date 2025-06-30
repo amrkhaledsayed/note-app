@@ -25,7 +25,7 @@ export const renderEmptyState = (containerCards) => {
       containerCards === notesDetelesSection && "sticky top-46"
     }
     ">
-      <img src="/assest/folder.png" alt="empty icon" class="empty_img_cards">
+      <img src="/assets/folder.png" alt="empty icon" class="empty_img_cards">
       <p class="note text-[#898989] text-[11px]">${note}</p>
     </div>
   `;
@@ -135,13 +135,10 @@ export const addNotes = (key, containerCards) => {
 export const addButtonNote = () => {
   addNotePinned.addEventListener("click", (e) => {
     e.preventDefault();
-
     const success = addNotes("pinned notes", containerCardsPinned);
     if (!success) return;
-
     noteButtonState();
     lodding.classList.remove("none");
-
     setTimeout(() => {
       lodding.classList.add("none");
       messageSuccessfully.classList.remove("none");
@@ -164,7 +161,8 @@ export const addButtonNotePinned = () => {
 
     const success = addNotes("notes", containerNormalCards);
     if (!success) return;
-
+    messageSuccessfully.querySelector(".message").innerText =
+      "Note added successfully";
     noteButtonState();
     lodding.classList.remove("none");
 

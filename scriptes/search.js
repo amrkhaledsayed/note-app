@@ -125,7 +125,7 @@ export const search = () => {
     notes.classList.add("none");
     sectionNotes.insertAdjacentHTML(
       "beforeend",
-      `<div class="container_search flex items-center"><img src ="/assest/no-results.png" class="empty_search self-center"/><p class="text-gray-500 self-center">Can't find any result</p></div>`
+      `<div class="container_search flex items-center"><img src ="/assets/no-results.png" class="empty_search self-center"/><p class="text-gray-500 self-center">Can't find any result</p></div>`
     );
     renderEmptyState(notesDetelesSection);
   }

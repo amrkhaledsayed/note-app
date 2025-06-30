@@ -215,11 +215,11 @@ export const addCardEventListeners = () => {
       if (e.target.closest(".btn-delete-note") || e.target.closest(".delete")) {
         return;
       }
+      const containerSearch = document.querySelector(".container_search");
       notes.classList.add("dis-mo");
       notesDetelesSection.classList.remove("dis-mo");
       notesDetelesSection.classList.remove("none");
-
-      const containerSearch = document.querySelector(".container_search");
+      containerSearch.classList.add("none");
       if (containerSearch) {
         containerSearch.remove();
       }
