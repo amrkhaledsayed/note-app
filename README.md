@@ -70,19 +70,25 @@ To get a local copy of this application up and running, follow these simple step
 
 ### Installation
 
-```bash
 # Clone the repository
+```bash
 git clone https://github.com/amrkhaledsayed/note-app.git
+```
 
 # Navigate to the project directory
+```bash
 cd note-app
+```
 
 # Install dependencies
+```bash
 npm install
-
+```
 # Start the development server
+```bash
 npm run dev
-
+```
+```bash
 Almdrasa-Notes/
 ├── public/             # Publicly accessible assets.
 │   └── assest/         # Images and icons used in the application.
@@ -101,3 +107,4 @@ Almdrasa-Notes/
 │   └── viewHandlers.js
 ├── index.html          # Main HTML file.
 └── README.md           # This project documentation.
+```
