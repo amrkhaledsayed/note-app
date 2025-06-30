@@ -844,8 +844,8 @@ form {
     width: 75%;
   }
 }
-.fa-check {
-  font-weight: 500;
+.icon-check {
+  width:min(2rem,3rem);
 }
 .error-message {
   color: red;
