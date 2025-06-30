@@ -4,6 +4,9 @@ import {
   authorNote,
   containerCardsPinned,
   containerNormalCards,
+  errorAuthor,
+  errorNote,
+  errorTittle,
   lodding,
   messageSuccessfully,
   Note,
@@ -59,8 +62,8 @@ export const renderNote = (notes, containerCards) => {
       day: "numeric",
     });
     result += `
-  <div class="card w-[266px] h-[106px]" data-index="${index}">
-  <h4 class="header_note text-[16px] text-[#303030]">${tittle}</h4>
+    <div class="card w-[266px] h-[106px]" data-index="${index}">
+    <h4 class="header_note text-[16px] text-[#303030]">${tittle}</h4>
       <p class="note text-[#898989] text-[13px] line-clamp-3 overflow-hidden">${notede}</p>
       <div class="note-footer flex justify-between items-baseline">
         <p class="date text-[#898989]">${formattedDate}</p>
@@ -75,17 +78,47 @@ export const renderNote = (notes, containerCards) => {
   containerCards.insertAdjacentHTML("beforeend", result);
 };
 export const addNotes = (key, containerCards) => {
+  const tittle = tittleNote.value.trim();
+  const author = authorNote.value.trim();
+  const noteContent = Note.value.trim();
+
+  let hasError = false;
+
+  if (!tittle) {
+    tittleNote.classList.add("border_filed");
+    if (errorTittle) errorTittle.classList.remove("none");
+    hasError = true;
+  } else {
+    tittleNote.classList.remove("border_filed");
+    if (errorTittle) errorTittle.classList.add("none");
+  }
+
+  if (!author) {
+    authorNote.classList.add("border_filed");
+    if (errorAuthor) errorAuthor.classList.remove("none");
+    hasError = true;
+  } else {
+    authorNote.classList.remove("border_filed");
+    if (errorAuthor) errorAuthor.classList.add("none");
+  }
+
+  if (!noteContent) {
+    Note.classList.add("border_filed");
+    if (errorNote) errorNote.classList.remove("none");
+    hasError = true;
+  } else {
+    Note.classList.remove("border_filed");
+    if (errorNote) errorNote.classList.add("none");
+  }
+
+  if (hasError) return false;
+
   const note = {
-    tittle: tittleNote.value.trim(),
-    author: authorNote?.value.trim() || "Unknown",
-    note: Note.value.trim(),
+    tittle,
+    author,
+    note: noteContent,
     date: new Date().toISOString(),
   };
-
-  if (!note.tittle || !note.note || !note.author) {
-    alert("Please fill all fields");
-    return;
-  }
 
   const notes = fetchData(key) || [];
   notes.push(note);
@@ -95,18 +128,27 @@ export const addNotes = (key, containerCards) => {
   tittleNote.value = "";
   authorNote.value = "";
   Note.value = "";
+
+  return true;
 };
+
 export const addButtonNote = () => {
   addNotePinned.addEventListener("click", (e) => {
     e.preventDefault();
-    addNotes("pinned notes", containerCardsPinned);
+
+    const success = addNotes("pinned notes", containerCardsPinned);
+    if (!success) return;
+
     noteButtonState();
     lodding.classList.remove("none");
+
     setTimeout(() => {
       lodding.classList.add("none");
       messageSuccessfully.classList.remove("none");
+
       setTimeout(() => {
         messageSuccessfully.classList.add("active_message");
+
         setTimeout(() => {
           messageSuccessfully.classList.add("none");
           messageSuccessfully.classList.remove("active_message");
@@ -115,17 +157,24 @@ export const addButtonNote = () => {
     }, 500);
   });
 };
+
 export const addButtonNotePinned = () => {
   addNote.addEventListener("click", (e) => {
     e.preventDefault();
-    addNotes("notes", containerNormalCards);
+
+    const success = addNotes("notes", containerNormalCards);
+    if (!success) return;
+
     noteButtonState();
     lodding.classList.remove("none");
+
     setTimeout(() => {
       lodding.classList.add("none");
       messageSuccessfully.classList.remove("none");
+
       setTimeout(() => {
         messageSuccessfully.classList.add("active_message");
+
         setTimeout(() => {
           messageSuccessfully.classList.add("none");
           messageSuccessfully.classList.remove("active_message");

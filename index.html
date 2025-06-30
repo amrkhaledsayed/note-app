@@ -49,10 +49,12 @@
             name="search"
             class="input_search search-input rounded-2xl text-[#bc7160] text-[13px] w-[210px] h-[34.01px] outline-none bg-[#FFFFFF] placeholder:text-[13px] placeholder:text-[#898989]"
             placeholder="Search your notes"
+            required
           />
         </div>
         <div class="buttons flex flex-col items-start gap-[1rem]">
           <button
+            type="submit"
             class="notes border_left font-medium text-[1.6rem] leading-[2.7rem] btn-view-notes"
           >
             Notes
@@ -68,17 +70,42 @@
         <div class="container_add_inputs">
           <h3 class="tittle_add">Add Note</h3>
           <form>
-            <div>
+            <div class="tittle-container">
               <label for="tittle">Tittle</label>
-              <input type="text" id="tittle" class="input_tittle" />
+              <input
+                type="text"
+                id="tittle"
+                class="input_tittle"
+                required
+                minlength="6"
+              />
+              <p class="text-red-700 none error-message">
+                Please Enter into filed
+              </p>
             </div>
-            <div>
+            <div class="author-container">
               <label for="author">Author</label>
-              <input type="text" id="author" class="input_author" />
+              <input
+                type="text"
+                id="author"
+                class="input_author"
+                required
+                minlength="6"
+              />
+              <p class="text-red-700 none error-message">
+                Please Enter into filed
+              </p>
             </div>
-            <div>
+            <div class="note-container">
               <label for="note">Note</label>
-              <textarea id="note" class="input_note"> </textarea>
+              <textarea
+                id="note"
+                class="input_note"
+                requiredminlength="6"
+              ></textarea>
+              <p class="text-red-700 none error-message">
+                Please Enter into filed
+              </p>
             </div>
             <div class="buts_notes">
               <button type="submit" value="normal" class="button_add">

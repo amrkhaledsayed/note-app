@@ -4,6 +4,12 @@ import {
   notesDetelesSection,
   buttonSectionNotes,
   mediaQuery,
+  tittleNote,
+  Note,
+  authorNote,
+  errorTittle,
+  errorAuthor,
+  errorNote,
 } from "./element.js";
 import { addButtonNote, addButtonNotePinned, render } from "./render-notes.js";
 import { addMore, deleteNote, disolayNoteDetails } from "./utils.js";
@@ -78,4 +84,64 @@ document.addEventListener("click", (e) => {
     if (containerNotes) containerNotes.classList.remove("pad");
     if (inputMo) inputMo.value = ""; //
   }
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let hasError = false;
+
+    const title = tittleNote.value.trim();
+    const author = authorNote.value.trim();
+    const noteContent = Note.value.trim();
+
+    if (!title) {
+      tittleNote.classList.add("border_filed");
+      if (errorTittle) errorTittle.classList.remove("none");
+      hasError = true;
+    } else {
+      tittleNote.classList.remove("border_filed");
+      if (errorTittle) errorTittle.classList.add("none");
+    }
+
+    if (!noteContent) {
+      Note.classList.add("border_filed");
+      if (errorNote) errorNote.classList.remove("none");
+      hasError = true;
+    } else {
+      Note.classList.remove("border_filed");
+      if (errorNote) errorNote.classList.add("none");
+    }
+
+    if (!author) {
+      authorNote.classList.add("border_filed");
+      if (errorAuthor) errorAuthor.classList.remove("none");
+      hasError = true;
+    } else {
+      authorNote.classList.remove("border_filed");
+      if (errorAuthor) errorAuthor.classList.add("none");
+    }
+
+    if (hasError) return;
+
+    const note = {
+      tittle: title,
+      author: author || "Unknown",
+      note: noteContent,
+      date: new Date().toISOString(),
+    };
+  });
+
+  [tittleNote, Note, authorNote].forEach((field) => {
+    field.addEventListener("input", () => {
+      if (field.value.trim()) {
+        const errorMessage =
+          field.parentElement.querySelector(".error-message");
+        if (errorMessage) {
+          errorMessage.remove();
+        }
+        field.classList.remove("border_filed");
+      }
+    });
+  });
 });

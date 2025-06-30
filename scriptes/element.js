@@ -36,3 +36,8 @@ export const inputMo = document.querySelector(".input_search-mo");
 export const messageSuccessfully = document.querySelector(
   ".message_Successfully "
 );
+export const errorTittle =
+  tittleNote.parentElement.querySelector(".error-message");
+export const errorAuthor =
+  authorNote.parentElement.querySelector(".error-message");
+export const errorNote = Note.parentElement.querySelector(".error-message");
