@@ -1,120 +1,6 @@
-<<<<<<< HEAD
 # Almdrasa-Notes
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4.0-38BDF8?logo=tailwindcss&logoColor=white&style=for-the-badge)
-![LocalStorage](https://img.shields.io/badge/LocalStorage-Enabled-4CAF50?style=for-the-badge)
-
-Almdrasa-Notes is a simple and intuitive note-taking application designed to help you organize your thoughts, ideas, and important information. It allows you to create, view, and manage both regular and "pinned" notes, making it easy to keep your most crucial notes readily accessible. The application features a responsive design, adapting seamlessly to both desktop and mobile screens.
-
----
-
-## Demo
-
-Experience Almdrasa-Notes live: [https://almadrasa-note1.netlify.app/](https://almadrasa-note1.netlify.app/)
-
-## Features
-
-* **Create Notes:** Easily add new notes with a title, author, and content.
-* **Pinned Notes:** Mark important notes as "pinned" for quick access at the top of your list.
-* **View Note Details:** Click on any note to view its full content, date, and author.
-* **Edit/Add to Notes:** Continue adding to existing notes through a dedicated "Add More" feature.
-* **Delete Notes:** Remove notes you no longer need.
-* **Search Functionality:** Quickly find your notes by searching through titles and content.
-* **Responsive Design:** Enjoy a consistent user experience across various devices, from desktops to mobile phones.
-* **Local Storage:** All your notes are saved locally in your browser's storage, ensuring your data persists even after closing the application.
-* **User Feedback:** Visual cues for successful actions (e.g., "Note added successfully," "Note deleted successfully").
-
----
-
-## Technologies Used
-
-* **HTML5:** For the basic structure of the web pages.
-* **CSS3:** For styling and layout, including responsive design.
-    * **Tailwind CSS:** Used for utility-first CSS styling (`src/output.css`).
-    * **Custom CSS:** (`styles/style.css`, `styles/reset.css`) for additional styling.
-* **JavaScript (ES6+):** For all interactive functionalities, including:
-    * DOM manipulation.
-    * Event handling.
-    * Local Storage management.
-    * Search algorithm.
-* **Google Fonts:** For custom typography, enhancing the visual appeal.
-* **Font Awesome & Flaticon:** For various icons used throughout the application.
-
----
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-You only need a modern web browser to run this application.
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/amrkhaledsayed/note-app.git]
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd Almdrasa-Notes
-    ```
-3.  **Open `index.html`:**
-    Simply open the `index.html` file in your preferred web browser.
-
----
-
-## Usage
-
-1.  **Sidebar Navigation:**
-    * **Notes:** Click "Notes" to view your list of notes (pinned and normal).
-    * **Add Notes:** Click "Add Notes" to open the form for creating a new note.
-
-2.  **Adding a Note:**
-    * Go to the "Add Notes" section.
-    * Fill in the **Title**, **Author**, and **Note** fields.
-    * Click "Add Note" to add a regular note, or "Add Pinned Note" to add a note that will appear in the "PINNED" section.
-
-3.  **Viewing Note Details:**
-    * In the "Notes" section, click on any note card to view its full details on the right-hand side (or in a new section on mobile).
-
-4.  **Adding More to a Note:**
-    * When viewing a note's details, click the `+` icon to open a pop-up.
-    * Type your additional content and click "Add" to append it to the current note.
-
-5.  **Deleting a Note:**
-    * On a note card, click the "Delete" button. You'll be asked for confirmation before the note is removed.
-
-6.  **Searching Notes:**
-    * Use the search bar in the sidebar (desktop) or header (mobile) to search for notes by title or content. The search results will highlight the matching text.
-
----
-## 📁 Project Structure
-
-```plaintext
-Almdrasa-Notes/
-├── assest/              # Contains images and icons used in the application.
-├── styles/
-│   ├── reset.css        # A CSS reset stylesheet to ensure consistent styling across browsers.
-│   └── style.css        # Custom main stylesheet for the application's unique design.
-├── src/
-│   └── output.css       # The compiled output file from Tailwind CSS, containing all utility classes.
-├── scriptes/            # JavaScript files that power the application's functionality.
-│   ├── element.js       # Centralized selection of frequently used DOM elements.
-│   ├── index.js         # The main entry point for the application's JavaScript logic and global event listeners.
-│   ├── render-notes.js  # Functions responsible for rendering notes to the UI and handling note addition logic.
-│   ├── search.js        # Implements the note search functionality, including highlighting results.
-│   ├── utils.js         # Provides utility functions for data management (fetching, saving, deleting) and displaying note details.
-│   └── viewHandlers.js  # Manages UI views, responsiveness, and various event handlers related to the user interface.
-├── index.html           # The main HTML file, serving as the application's entry point.
-└── README.md            # This README file, providing an overview of the project.
-=======
-# Almdrasa-Notes
-![Poster](./assest/poster.jpeg)
+![Poster](./public/assest/poster.jpeg)
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" />
@@ -130,130 +16,96 @@ Almdrasa-Notes is a simple and intuitive note-taking application designed to hel
 
 ---
 
-## Features
+## 🚀 Demo
 
-* **Create Notes:** Easily add new notes with a title, author, and content.
-* **Pinned Notes:** Mark important notes as "pinned" for quick access at the top of your list.
-* **View Note Details:** Click on any note to view its full content, date, and author.
-* **Edit/Add to Notes:** Continue adding to existing notes through a dedicated "Add More" feature.
-* **Delete Notes:** Remove notes you no longer need.
-* **Search Functionality:** Quickly find your notes by searching through titles and content.
-* **Responsive Design:** Enjoy a consistent user experience across various devices, from desktops to mobile phones.
-* **Local Storage:** All your notes are saved locally in your browser's storage, ensuring your data persists even after closing the application.
-* **User Feedback:** Visual cues for successful actions (e.g., "Note added successfully," "Note deleted successfully").
+[Live Preview on Netlify](https://almadrasa-note1.netlify.app/)
 
 ---
 
-## Technologies Used
+## ✨ Features
 
-* **HTML5:** For the basic structure of the web pages.
-* **CSS3:** For styling and layout, including responsive design.
-    * **Tailwind CSS:** Used for utility-first CSS styling (`src/output.css`).
-    * **Custom CSS:** (`styles/style.css`, `styles/reset.css`) for additional styling.
-* **JavaScript (ES6+):** For all interactive functionalities, including:
-    * DOM manipulation.
-    * Event handling.
-    * Local Storage management.
-    * Search algorithm.
-* **Google Fonts:** For custom typography, enhancing the visual appeal.
-* **Font Awesome & Flaticon:** For various icons used throughout the application.
-* **Vite:** Used as a fast development build tool.
+- **Create Notes:** Easily add new notes with a title, author, and content.
+- **Pinned Notes:** Mark important notes as "pinned" for quick access at the top.
+- **View Note Details:** Click on any note to view its full content, date, and author.
+- **Edit/Add to Notes:** Continue adding to existing notes through a dedicated "Add More" feature.
+- **Delete Notes:** Remove notes you no longer need.
+- **Search Functionality:** Quickly find your notes by searching through titles and content.
+- **Responsive Design:** Works seamlessly on desktop and mobile.
+- **Local Storage:** Your notes are saved locally in your browser.
+- **User Feedback:** Visual alerts for successful actions (e.g., note added, deleted).
 
 ---
 
-# Getting Started
+## 🎨 Animations
+
+This application includes smooth animations to enhance the user experience:
+
+- **Note Entry/Exit:** Notes fade or slide in/out when added or deleted.
+- **Sidebar Transitions:** The sidebar opens/closes with a smooth slide effect.
+- **Buttons & Interactive Elements:** Subtle hover and click animations for better user engagement.
+- **Loading & Success Messages:** Animated loading spinners and fade-in success messages.
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** — Structure of the web pages.
+- **CSS3** & **Sass** — Styling and design.
+- **TailwindCSS** — Utility-first CSS framework.
+- **JavaScript (ES6+)** — Interactivity and logic.
+- **Vite** — Fast development server and build tool.
+- **LocalStorage** — Data persistence.
+- **Google Fonts**, **Font Awesome**, **Flaticon** — Icons & Typography.
+
+---
+
+## 🏁 Getting Started
 
 To get a local copy of this application up and running, follow these simple steps.
 
----
+### Prerequisites
 
-## Prerequisites
+- **Node.js** (which includes npm)
+- A modern web browser
 
-* **Node.js** (which includes npm)
-* A modern web browser
+### Installation
 
----
+### Clone the repository
+```bash
+git clone https://github.com/amrkhaledsayed/note-app.git
+```
 
-## Installation
+### Navigate to the project directory
+```bash
+cd note-app
+```
 
-1.  **Clone the repository:**
-
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/Almdrasa-Notes.git](https://github.com/YOUR_USERNAME/Almdrasa-Notes.git)
-    ```
-
-2.  **Navigate to the project directory:**
-
-    ```bash
-    cd Almdrasa-Notes
-    ```
-
-3.  **Install dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-4.  **Start the development server:**
-
-    ```bash
-    npm run dev
-    ```
-
-    This command will typically open your application in your default web browser (often at `http://localhost:5173` or another available port). If it doesn't open automatically, you can copy the URL displayed in your terminal and paste it into your browser.
-
----
-
-## Demo
-
-Once the development server is running, you can access the application through your web browser. The application will be live at the address provided in your terminal (e.g., `http://localhost:5173`). Simply open this URL in your browser to see the application in action.
-
----
-
-## Usage
-
-1.  **Sidebar Navigation:**
-    * **Notes:** Click "Notes" to view your list of notes (pinned and normal).
-    * **Add Notes:** Click "Add Notes" to open the form for creating a new note.
-
-2.  **Adding a Note:**
-    * Go to the "Add Notes" section.
-    * Fill in the **Title**, **Author**, and **Note** fields.
-    * Click "Add Note" to add a regular note, or "Add Pinned Note" to add a note that will appear in the "PINNED" section.
-
-3.  **Viewing Note Details:**
-    * In the "Notes" section, click on any note card to view its full details on the right-hand side (or in a new section on mobile).
-
-4.  **Adding More to a Note:**
-    * When viewing a note's details, click the `+` icon to open a pop-up.
-    * Type your additional content and click "Add" to append it to the current note.
-
-5.  **Deleting a Note:**
-    * On a note card, click the "Delete" button. You'll be asked for confirmation before the note is removed.
-
-6.  **Searching Notes:**
-    * Use the search bar in the sidebar (desktop) or header (mobile) to search for notes by title or content. The search results will highlight the matching text.
-
----
-
+### Install dependencies
+```bash
+npm install
+```
+# Start the development server
+```bash
+npm run dev
+```
 ## 📁 Project Structure
-
-```plaintext
+```bash
 Almdrasa-Notes/
-├── assest/             # Contains images and icons used in the application.
+├── public/             # Publicly accessible assets.
+│   └── assest/         # Images and icons used in the application.
 ├── styles/
-│   ├── reset.css       # A CSS reset stylesheet to ensure consistent styling across browsers.
+│   ├── reset.css       # CSS reset stylesheet for consistent styling across browsers.
 │   ├── style.scss      # Sass source file for the application's unique design.
-│   └── style.css       # Compiled CSS from style.scss for the application's unique design.
+│   └── style.css       # Compiled CSS from style.scss.
 ├── src/
-│   └── output.css      # The compiled output file from Tailwind CSS, containing all utility classes.
-├── scriptes/           # JavaScript files that power the application's functionality.
-│   ├── element.js      # Centralized selection of frequently used DOM elements.
-│   ├── index.js        # The main entry point for the application's JavaScript logic and global event listeners.
-│   ├── render-notes.js # Functions responsible for rendering notes to the UI and handling note addition logic.
-│   ├── search.js       # Implements the note search functionality, including highlighting results.
-│   ├── utils.js        # Provides utility functions for data management (fetching, saving, deleting) and displaying note details.
-│   └── viewHandlers.js # Manages UI views, responsiveness, and various event handlers related to the user interface.
-├── index.html          # The main HTML file, serving as the application's entry point.
-└── README.md           # This README file, providing an overview of the project.
->>>>>>> origin/main
+│   └── output.css      # Compiled Tailwind CSS output.
+├── scriptes/           # JavaScript files that power the application.
+│   ├── element.js
+│   ├── index.js
+│   ├── render-notes.js
+│   ├── search.js
+│   ├── utils.js
+│   └── viewHandlers.js
+├── index.html          # Main HTML file.
+└── README.md           # This project documentation.
+```
