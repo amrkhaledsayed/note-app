@@ -70,17 +70,17 @@ To get a local copy of this application up and running, follow these simple step
 
 ### Installation
 
-# Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/amrkhaledsayed/note-app.git
 ```
 
-# Navigate to the project directory
+### Navigate to the project directory
 ```bash
 cd note-app
 ```
 
-# Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
