@@ -18,7 +18,7 @@ Almdrasa-Notes is a simple and intuitive note-taking application designed to hel
 
 ## 🚀 Demo
 
-[Live Preview on Netlify](https://almadrasa-note1.netlify.app/)
+[Live Preview on Netlify](https://almadrasa-note.netlify.app/)
 
 ---
 
