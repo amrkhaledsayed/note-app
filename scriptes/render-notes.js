@@ -25,7 +25,7 @@ export const renderEmptyState = (containerCards) => {
       containerCards === notesDetelesSection && "sticky top-46"
     }
     ">
-      <img src="./assest/folder.png" alt="empty icon" class="empty_img_cards">
+      <img src="/assest/folder.png" alt="empty icon" class="empty_img_cards">
       <p class="note text-[#898989] text-[11px]">${note}</p>
     </div>
   `;

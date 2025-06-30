@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almdrasa-Notes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lateef:wght@200;300;400;500;600;700;800&family=Monomakh&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Scheherazade+New:wght@400;500;600;700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/assets/index-Dvd3Pc-C.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D-vvv2cb.css">
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar bg-[#F6F6F6] w-fit h-screen absolute">
+      <div class="container-sider">
+        <button class="btn-close-sidebar">
+          <i class="fa-solid fa-xmark text-3xl close_sider"></i>
+        </button>
+        <h1 class="header font-normal text-[#bC7160]">Almdrasa-Notes</h1>
+        <div class="search-container relative flex">
+          <button class="btn-search icon_search absolute">
+            <i class="fa-solid fa-magnifying-glass text-[#898989]"></i>
+          </button>
+          <input
+            type="text"
+            name="search"
+            class="input_search search-input rounded-2xl text-[#bc7160] text-[13px] w-[210px] h-[34.01px] outline-none bg-[#FFFFFF] placeholder:text-[13px] placeholder:text-[#898989]"
+            placeholder="Search your notes"
+            required
+          />
+        </div>
+        <div class="buttons flex flex-col items-start gap-[1rem]">
+          <button
+            type="submit"
+            class="notes border_left font-medium text-[1.6rem] leading-[2.7rem] btn-view-notes"
+          >
+            Notes
+          </button>
+          <button class="add font-medium btn-add-note">Add Notes</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="notes-section w-full">
+      <div class="add_inputs none">
+        <div class="container_add_inputs">
+          <h3 class="tittle_add">Add Note</h3>
+          <form>
+            <div class="tittle-container">
+              <label for="tittle">Tittle</label>
+              <input
+                type="text"
+                id="tittle"
+                class="input_tittle"
+                required
+                minlength="6"
+              />
+              <p class="text-red-700 none error-message">
+                Please Enter into filed
+              </p>
+            </div>
+            <div class="author-container">
+              <label for="author">Author</label>
+              <input
+                type="text"
+                id="author"
+                class="input_author"
+                required
+                minlength="6"
+              />
+              <p class="text-red-700 none error-message">
+                Please Enter into filed
+              </p>
+            </div>
+            <div class="note-container">
+              <label for="note">Note</label>
+              <textarea
+                id="note"
+                class="input_note"
+                requiredminlength="6"
+              ></textarea>
+              <p class="text-red-700 none error-message">
+                Please Enter into filed
+              </p>
+            </div>
+            <div class="buts_notes">
+              <button type="submit" value="normal" class="button_add">
+                Add Note
+              </button>
+              <button type="submit" class="button_add--pinned">
+                Add Pinned Note
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container_notes relative">
+        <div class="pinned_notes">
+          <h3 class="pinned_header text-[13px] text-[#EC7160]">PINNED</h3>
+          <i
+            class="fa-solid fa-chevron-right arrow absolute"
+            aria-hidden="true"
+          ></i>
+          <div class="cards cards_pinned relative"></div>
+        </div>
+        <div class="notes_normal">
+          <h3 class="notes_normal_header text-[13px] text-[#EC7160]">Notes</h3>
+          <div class="cards normal_cards"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details Section -->
+    <div class="details_note dis-mo">
+      <div class="container_details"></div>
+    </div>
+    <div class="overlay none"></div>
+    <div class="add_more none">
+      <img src="/assest/icons8-close.svg" class="close_icon" />
+      <label for="note" class="label_add_more">What do you think ?</label>
+
+      <textarea
+        id="note"
+        class="add_more_value"
+        placeholder="Continue Your Note"
+      ></textarea>
+      <button type="submit" value="normal" class="add_more_btn">Add</button>
+    </div>
+    <div class="message_Successfully absolute none">
+      <i class="fa-solid fa-check"></i>
+      <p class="message">Note added successfully</p>
+    </div>
+    <!-- ------------------------ -->
+
+    <div class="container_lodding none">
+      <div
+        aria-label="Orange and tan hamster running in a metal wheel"
+        role="img"
+        class="wheel-and-hamster"
+      >
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </body>
+</html>

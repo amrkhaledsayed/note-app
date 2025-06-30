@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)\r ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)\r ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)\r ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4.0-38BDF8?logo=tailwindcss&logoColor=white&style=for-the-badge)\r ![LocalStorage](https://img.shields.io/badge/LocalStorage-Enabled-4CAF50?style=for-the-badge)",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.10",
     "tailwindcss": "^4.1.10"
@@ -16,5 +17,13 @@
   "devDependencies": {
     "sass": "^1.89.2",
     "vite": "^7.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrkhaledsayed/note-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amrkhaledsayed/note-app/issues"
+  },
+  "homepage": "https://github.com/amrkhaledsayed/note-app#readme"
 }
