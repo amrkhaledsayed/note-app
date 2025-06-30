@@ -1,8 +1,4 @@
 # Almdrasa-Notes
-![Poster](./assest/poster.jpeg)
-![Poster](./assest/poster1.jpeg)
-![Poster](./assest/poster2.jpeg)
-![Poster](./assest/poster3.jpeg)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
@@ -13,6 +9,10 @@
 Almdrasa-Notes is a simple and intuitive note-taking application designed to help you organize your thoughts, ideas, and important information. It allows you to create, view, and manage both regular and "pinned" notes, making it easy to keep your most crucial notes readily accessible. The application features a responsive design, adapting seamlessly to both desktop and mobile screens.
 
 ---
+
+## Demo
+
+Experience Almdrasa-Notes live: [https://almadrasa-note1.netlify.app/](https://almadrasa-note1.netlify.app/)
 
 ## Features
 
@@ -56,7 +56,7 @@ You only need a modern web browser to run this application.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/Almdrasa-Notes.git](https://github.com/YOUR_USERNAME/Almdrasa-Notes.git)
+    git clone [https://github.com/amrkhaledsayed/note-app.git]
     ```
 2.  **Navigate to the project directory:**
     ```bash
