@@ -8,8 +8,8 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" />
   <img src="https://img.shields.io/badge/TailwindCSS-v4.0-38BDF8?logo=tailwindcss&logoColor=white&style=for-the-badge" />
   <img src="https://img.shields.io/badge/LocalStorage-Enabled-4CAF50?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" />
 </p>
-
 
 Almdrasa-Notes is a simple and intuitive note-taking application designed to help you organize your thoughts, ideas, and important information. It allows you to create, view, and manage both regular and "pinned" notes, making it easy to keep your most crucial notes readily accessible. The application features a responsive design, adapting seamlessly to both desktop and mobile screens.
 
@@ -42,6 +42,7 @@ Almdrasa-Notes is a simple and intuitive note-taking application designed to hel
     * Search algorithm.
 * **Google Fonts:** For custom typography, enhancing the visual appeal.
 * **Font Awesome & Flaticon:** For various icons used throughout the application.
+* **Vite:** Used as a fast development build tool.
 
 ---
 
@@ -53,7 +54,7 @@ To get a local copy of this application up and running, follow these simple step
 
 ## Prerequisites
 
-* Node.js (which includes npm)
+* **Node.js** (which includes npm)
 * A modern web browser
 
 ---
@@ -84,7 +85,15 @@ To get a local copy of this application up and running, follow these simple step
     npm run dev
     ```
 
-    This command will typically open your application in your default web browser (often at http://localhost:5173 or another available port). If it doesn't open automatically, you can copy the URL displayed in your terminal and paste it into your browser.
+    This command will typically open your application in your default web browser (often at `http://localhost:5173` or another available port). If it doesn't open automatically, you can copy the URL displayed in your terminal and paste it into your browser.
+
+---
+
+## Demo
+
+Once the development server is running, you can access the application through your web browser. The application will be live at the address provided in your terminal (e.g., `http://localhost:5173`). Simply open this URL in your browser to see the application in action.
+
+---
 
 ## Usage
 
@@ -111,23 +120,24 @@ To get a local copy of this application up and running, follow these simple step
     * Use the search bar in the sidebar (desktop) or header (mobile) to search for notes by title or content. The search results will highlight the matching text.
 
 ---
+
 ## 📁 Project Structure
 
 ```plaintext
 Almdrasa-Notes/
-├── assest/              # Contains images and icons used in the application.
+├── assest/             # Contains images and icons used in the application.
 ├── styles/
-│   ├── reset.css
-│   ├── style.scss        # A CSS reset stylesheet to ensure consistent styling across browsers.
-│   └── style.css        # Custom main stylesheet for the application's unique design.
+│   ├── reset.css       # A CSS reset stylesheet to ensure consistent styling across browsers.
+│   ├── style.scss      # Sass source file for the application's unique design.
+│   └── style.css       # Compiled CSS from style.scss for the application's unique design.
 ├── src/
-│   └── output.css       # The compiled output file from Tailwind CSS, containing all utility classes.
-├── scriptes/            # JavaScript files that power the application's functionality.
-│   ├── element.js       # Centralized selection of frequently used DOM elements.
-│   ├── index.js         # The main entry point for the application's JavaScript logic and global event listeners.
-│   ├── render-notes.js  # Functions responsible for rendering notes to the UI and handling note addition logic.
-│   ├── search.js        # Implements the note search functionality, including highlighting results.
-│   ├── utils.js         # Provides utility functions for data management (fetching, saving, deleting) and displaying note details.
-│   └── viewHandlers.js  # Manages UI views, responsiveness, and various event handlers related to the user interface.
-├── index.html           # The main HTML file, serving as the application's entry point.
-└── README.md            # This README file, providing an overview of the project.
+│   └── output.css      # The compiled output file from Tailwind CSS, containing all utility classes.
+├── scriptes/           # JavaScript files that power the application's functionality.
+│   ├── element.js      # Centralized selection of frequently used DOM elements.
+│   ├── index.js        # The main entry point for the application's JavaScript logic and global event listeners.
+│   ├── render-notes.js # Functions responsible for rendering notes to the UI and handling note addition logic.
+│   ├── search.js       # Implements the note search functionality, including highlighting results.
+│   ├── utils.js        # Provides utility functions for data management (fetching, saving, deleting) and displaying note details.
+│   └── viewHandlers.js # Manages UI views, responsiveness, and various event handlers related to the user interface.
+├── index.html          # The main HTML file, serving as the application's entry point.
+└── README.md           # This README file, providing an overview of the project.
