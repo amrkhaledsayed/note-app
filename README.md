@@ -1,6 +1,6 @@
 # Almdrasa-Notes
 
-![Poster](./public/assest/poster.jpeg)
+![Poster](./public/assets/poster.jpeg)
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" />
@@ -18,7 +18,7 @@ Almdrasa-Notes is a simple and intuitive note-taking application designed to hel
 
 ## 🚀 Demo
 
-[Live Preview on Netlify](https://almadrasa-note1.netlify.app/)
+[Live Preview on Netlify](https://almadrasa-note.netlify.app/)
 
 ---
 
