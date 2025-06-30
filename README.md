@@ -88,6 +88,7 @@ npm install
 ```bash
 npm run dev
 ```
+## 📁 Project Structure
 ```bash
 Almdrasa-Notes/
 ├── public/             # Publicly accessible assets.
