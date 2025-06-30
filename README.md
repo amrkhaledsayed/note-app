@@ -3,9 +3,11 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4.0-38BDF8?logo=tailwindcss&logoColor=white&style=for-the-badge)
 ![LocalStorage](https://img.shields.io/badge/LocalStorage-Enabled-4CAF50?style=for-the-badge)
+
 
 Almdrasa-Notes is a simple and intuitive note-taking application designed to help you organize your thoughts, ideas, and important information. It allows you to create, view, and manage both regular and "pinned" notes, making it easy to keep your most crucial notes readily accessible. The application features a responsive design, adapting seamlessly to both desktop and mobile screens.
 
@@ -95,7 +97,8 @@ You only need a modern web browser to run this application.
 Almdrasa-Notes/
 ├── assest/              # Contains images and icons used in the application.
 ├── styles/
-│   ├── reset.css        # A CSS reset stylesheet to ensure consistent styling across browsers.
+│   ├── reset.css
+│   ├── style.scss        # A CSS reset stylesheet to ensure consistent styling across browsers.
 │   └── style.css        # Custom main stylesheet for the application's unique design.
 ├── src/
 │   └── output.css       # The compiled output file from Tailwind CSS, containing all utility classes.
