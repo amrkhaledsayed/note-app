@@ -1,6 +1,6 @@
 # Almdrasa-Notes
 
-![Poster](./assest/poster.jpeg)
+![Poster](./public/assest/poster.jpeg)
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" />
@@ -58,7 +58,7 @@ This application incorporates subtle animations to enhance the user experience a
 
 ---
 
-## 🏁 Getting Started
+# 🏁 Getting Started
 
 To get a local copy of this application up and running, follow these simple steps.
 
@@ -68,10 +68,6 @@ To get a local copy of this application up and running, follow these simple step
 -   A modern web browser
 
 ---
-
-### Installation
-
-```bash
 # Clone the repository
 git clone [https://github.com/amrkhaledsayed/note-app.git](https://github.com/amrkhaledsayed/note-app.git)
 
@@ -83,6 +79,12 @@ npm install
 
 # Start the development server
 npm run dev
+
+### Project Structure
+
+Understanding the project's layout can help you navigate and contribute. Here's an overview of the key directories and files:
+
+```plaintext
 Almdrasa-Notes/
 ├── public/             # Publicly accessible assets.
 │   └── assest/         # Images and icons used in the application.
