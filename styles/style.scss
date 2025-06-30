@@ -935,3 +935,6 @@ form {
 .error-message {
   color: red;
 }
+.message {
+  font-size: clamp(1.3rem, 1.5vw, 1.9rem);
+}
