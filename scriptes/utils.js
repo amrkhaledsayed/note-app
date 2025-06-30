@@ -127,6 +127,7 @@ export const addMore = () => {
           sectionMoreNote.classList.add("none");
         }, 10);
         if (mediaQuery.matches) {
+          const notes = document.querySelector(".container_notes");
           notes.classList.remove("none");
           notesDetelesSection.classList.add("dis-mo");
           notesDetelesSection.classList.add("none");

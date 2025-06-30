@@ -219,7 +219,7 @@ export const addCardEventListeners = () => {
       notes.classList.add("dis-mo");
       notesDetelesSection.classList.remove("dis-mo");
       notesDetelesSection.classList.remove("none");
-      containerSearch.classList.add("none");
+      containerSearch?.classList.add("none");
       if (containerSearch) {
         containerSearch.remove();
       }
