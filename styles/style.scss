@@ -926,7 +926,7 @@ form {
 }
 @media (max-width: 450px) {
   .message_Successfully {
-    width: 75%;
+    width: 83%;
   }
 }
 .fa-check {
@@ -937,7 +937,4 @@ form {
 }
 .message {
   font-size: clamp(1.3rem, 1.5vw, 1.9rem);
-}
-.icon-check {
-  width: min(2rem, 3rem);
 }
