@@ -94,6 +94,11 @@ export const deleteNote = () => {
 
     deleteState(key, index, containerCards);
     search();
+    const inputMobile = document.querySelector(".input_search-mo");
+    const inputDesktop = document.querySelector(".input_search");
+    if (inputMobile) inputMobile.value = "";
+    if (inputDesktop) inputDesktop.value = "";
+    return;
   });
 };
 
@@ -120,7 +125,7 @@ export const addMore = () => {
         disolayNoteDetails(containerCards);
         saveToDB(keyFetch, notes);
         render(keyFetch, containerCards);
-        addMoreValue.value = " ";
+        addMoreValue.value = "";
         sectionMoreNote.classList.remove("transition_scale");
         document.querySelector(".overlay").classList.add("none");
         setTimeout(() => {

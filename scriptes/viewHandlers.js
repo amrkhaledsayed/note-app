@@ -13,6 +13,7 @@ import {
   sectionNotes,
   sidebar,
   buttonSectionNotes,
+  inputSearch,
 } from "./element.js";
 import { search } from "./search.js";
 
@@ -53,10 +54,13 @@ export const layoutEvents = () => {
   });
 
   buttonSectionNotes.addEventListener("click", () => {
+    const containerSearch = document.querySelector(".container_search");
+    containerSearch.innerHTML = "";
+
     notesDetelesSection.classList.remove("secDteTrans");
     sectionNotes.classList.remove("w-81");
     notes.classList.remove("dis-mo");
-
+    inputSearch.value = "";
     sidebar.classList.remove("sidebar_active");
     sidebar.classList.remove("dis-blo");
     notesDetelesSection.classList.add("dis-mo");
@@ -211,6 +215,7 @@ export const checkSearchContainer = () => {
 export const addCardEventListeners = () => {
   sectionNotes.addEventListener("click", (e) => {
     const card = e.target.closest(".card");
+
     if (card && mediaQuery.matches) {
       if (e.target.closest(".btn-delete-note") || e.target.closest(".delete")) {
         return;
@@ -220,9 +225,6 @@ export const addCardEventListeners = () => {
       notesDetelesSection.classList.remove("dis-mo");
       notesDetelesSection.classList.remove("none");
       containerSearch?.classList.add("none");
-      if (containerSearch) {
-        containerSearch.remove();
-      }
 
       updateNotesButtonState();
     }
